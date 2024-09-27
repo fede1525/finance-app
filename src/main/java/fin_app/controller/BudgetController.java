@@ -11,12 +11,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/budgets")
-public class BudgetController {
+public class    BudgetController {
 
     @Autowired
     private BudgetService budgetService;
 
-    @GetMapping
+    @GetMapping("/users/{userId}")
     public ResponseEntity<List<Budget>> getBudgetByUserId(@PathVariable Long userId) {
         List<Budget> budgets = budgetService.getBudgetByUserId(userId);
         return new ResponseEntity<>(budgets, HttpStatus.OK);

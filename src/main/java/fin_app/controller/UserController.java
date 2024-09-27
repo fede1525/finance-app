@@ -2,7 +2,7 @@ package fin_app.controller;
 
 import fin_app.model.User;
 import fin_app.services.UserService;
-import fin_app.util.JwtUtil;
+import fin_app.config.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
